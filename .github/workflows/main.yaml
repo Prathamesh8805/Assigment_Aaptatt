@@ -71,11 +71,6 @@ jobs:
       - name: Run Python script
         run: python pr_version_release1.py 
         env:
-          OWNER: ${{ secrets.OWNER }}
-          REPO: ${{ secrets.REPO }}
-          RELEASE_VERSION_START: ${{ secrets.RELEASE_VERSION_START }}
-          RELEASE_VERSION_END: ${{ secrets.RELEASE_VERSION_END }}
-          RELEASE_VERSIONS: ${{ secrets.RELEASE_VERSIONS }}
           MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
       - name: Upload artifact
